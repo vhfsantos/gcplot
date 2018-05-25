@@ -17,8 +17,8 @@ Please, make sure the R package ggplot2 is installed successfully
 If you are heaving trouble dealing with the file types, please, see README.md
 \n
 \n
-GCPlot: An automated pipeline for plotting growth curves
-=========================================================
+gcplot: Automated plotting software for growth curves with biological replicates
+================================================================================
 by Vinícius H F dos Santos
 Version 1.0
 2018
@@ -85,8 +85,8 @@ ggsave(filename = flname, plot = p)
 # Exitting...
 
 
-# GCPlot: An automated pipeline for plotting growth curves
-# =========================================================
+# gcplot: Automated plotting software for growth curves with biological replicates
+# ================================================================================
 #
 # by Vinícius H F dos Santos
 # Version 1.0
