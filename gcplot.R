@@ -1,4 +1,4 @@
-
+#!/usr/bin/env Rscript
 ##########################
 # REPLICATE GROWTH CURVE #
 ##########################
