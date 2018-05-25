@@ -11,8 +11,15 @@ if((length(args) == 0) || args[1] == "help") {
 Usage:
 ======
 \n
-	R -f GCPlot.R --args <growth_file.txt> <spec_file.spec> <plot_name.png>
+	./gcplot.R --args <growth_file.txt> <spec_file.txt> <plot_name.png>
 \n
+	* <growth_file.txt> Tabular separated file with the growth data
+\n
+	* <spec_file.txt> Specification file with informations about the experiment
+\n
+	* <plot_name.png> Filename for the output chart image
+\n
+
 Please, make sure the R package ggplot2 is installed successfully
 If you are heaving trouble dealing with the file types, please, see README.md
 \n
