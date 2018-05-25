@@ -82,12 +82,11 @@ p = ggplot(data = df.merged, aes(x = Time, y = Mean)) +
 
 ggsave(filename = flname, plot = p)
 
-# Exitting...
-
-
-# gcplot: Automated plotting software for growth curves with biological replicates
-# ================================================================================
-#
-# by Vinícius H F dos Santos
-# Version 1.0
-# 2018
+writeLines("Exitting...
+\n
+\n
+gcplot: An automated pipeline for plotting growth curves
+=========================================================
+by Vinícius H F dos Santos
+Version 1.0
+2018\n")
