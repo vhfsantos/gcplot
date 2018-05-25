@@ -1,0 +1,9 @@
+# Treatment identification (comma separated)
+# of replicates of each tratment
+# Growth estimation method (OD, NCels..), default = OD600
+# Time units (hours, minutes ..), default = hours
+# Chart title, default = NULL
+
+hours
+OD600
+GCPlot
