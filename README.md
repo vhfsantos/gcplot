@@ -8,8 +8,10 @@ GCPlot only requires `R` and the package `ggplot2`
 ## Usage
 
 ```sh
-$ R -f GCPlot.R --args <growth_file.txt> <spec_file.spec> <plot_name.png>
+$ R -f GCPlot.R --args <growth_file.txt> <spec_file.spec> <plot_name.png> > stdout
 ```
+> For a cleaner status, set a standard output with `> stdout`
+
 * **growth_file.txt** - A file containing the growth data tabular separated. Each row must have the growth estimation on each time, and the columns must correspond to the replicates.
 
  The example bellow shows a file with columns corresponding to 2 different treatments with 3 replicates each;
