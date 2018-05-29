@@ -7,14 +7,16 @@ GCPlot only requires `R` and the package `ggplot2`
 
 ## Usage
 
-```sh
-$ R -f GCPlot.R --args <growth_file.txt> <spec_file.spec> <plot_name.png> > stdout
+gcplot can be run on Windows with the function `source()` on R console.
+
+```r
+> source("gcplot.R")
 ```
-> For a cleaner status, set a standard output with `> stdout`
 
-* **growth_file.txt** - A file containing the growth data tabular separated. Each row must have the growth estimation on each time, and the columns must correspond to the replicates.
+The growth curve file must be named as **gc_file.txt**, and the specification file as **spec_file.txt**.
 
- The example bellow shows a file with columns corresponding to 2 different treatments with 3 replicates each;
+
+ The example bellow shows a **gc_file.txt** with columns corresponding to 2 different treatments with 3 replicates each;
  
  |time|treatment1 - replicate1|treatment1 - replicate2|treatment2 - replicate1|treatment2 - replicate2|
  |---:|---:|---:|---:|---:|
@@ -34,7 +36,7 @@ $ R -f GCPlot.R --args <growth_file.txt> <spec_file.spec> <plot_name.png> > stdo
  
  For example, see `gc_example_file.txt`
  
-* **spec_file.spec** A file containing information about the experiment. The lines must contain, basically, information to   fill the output chart. The first two lines coresponds to X and Y label, respectively, and last one to the chart title.
+**spec_file.txt** is a file containing information about the experiment. The lines must contain, basically, information to   fill the output chart. The first two lines coresponds to X and Y label, respectively, and last one to the chart title.
  This file must be like follows:
  
  | |
@@ -45,7 +47,7 @@ $ R -f GCPlot.R --args <growth_file.txt> <spec_file.spec> <plot_name.png> > stdo
  
  For example, see `spec_example_file.spec`
  
- * **plot_name.png** Filename of the chart figure. It can be `png`, `svg`, `jpg` and all other formats supported by ggplot.
+ The chart image will be names as `plot.png`.
 
 
 
