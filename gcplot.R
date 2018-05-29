@@ -3,42 +3,13 @@
 # REPLICATE GROWTH CURVE #
 ##########################
 
-# Processing arguments
-args = commandArgs(trailingOnly = T)
-if((length(args) == 0) || args[1] == "help") {
-	stop("No files were suplied. Exiting...
-\n
-Usage:
-======
-\n
-	./gcplot.R --args <growth_file.txt> <spec_file.txt> <plot_name.png>
-\n
-	* <growth_file.txt> Tabular separated file with the growth data
-\n
-	* <spec_file.txt> Specification file with informations about the experiment
-\n
-	* <plot_name.png> Filename for the output chart image
-\n
-
-Please, make sure the R package ggplot2 is installed successfully
-If you are heaving trouble dealing with the file types, please, see README.md
-\n
-\n
-gcplot: Automated plotting software for growth curves with biological replicates
-================================================================================
-by Vinícius H F dos Santos
-Version 1.0
-2018
-\n
-")
-}
 # Loading packages
 library(ggplot2)
 
 # Loading files
-gc_header = read.table(args[1], stringsAsFactors = F)
-spec = read.table(args[2], stringsAsFactors = F)
-flname = paste0(args[3])
+gc_header = read.table("gc_file.txt", stringsAsFactors = F)
+spec = read.table("spec_file.txt", stringsAsFactors = F)
+flname = "plot.png"
 
 # Getting treatment information
 treat = unique(as.character(gc_header[1,2:ncol(gc_header)]))
