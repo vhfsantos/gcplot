@@ -1,6 +1,6 @@
-# Growth estimation method (OD, NCels..), default = OD600
-# Time units (hours, minutes ..), default = hours
-# Chart title, default = NULL
+# 1. Time units (hours, minutes ..), default = hours
+# 2. Growth estimation method (OD, NCels..), default = OD600
+# 3. Chart title, default = NULL
 
 hours
 OD600
