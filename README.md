@@ -1,4 +1,4 @@
-<p align="center"><img src="misc/logo.png" alt="GCPlot" width="300"></p>
+<p align="center"><img src="logo.png" alt="GCPlot" width="300"></p>
 
 GCPlot is a plotting software for growth curves with biological replicates. It works with experiments as growing cells under different conditions or growing different cells under the same conditions. Each of this _differable_ varbiable, here, is called **treatment**. So, if one wants to compare growth of cells of the **specie A** under **37°C** and **40°C**, it's said that there are two different treatments: 37°C and 40°C. It is the same if one wants to compare growth of cells of **specie A** and **specie B** under a fixed condition of 37°C; there are two different treatments: specie A and specie B.
 
